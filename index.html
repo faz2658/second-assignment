@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!--Necessary Files Required-->
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Importing bootstrap files-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--importing local css file-->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<nav class="navbar navbar-inverse">
+<!--Navbar at the top--> 
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -24,21 +27,44 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Campaign</a></li>
-        <li><a href="#">Trophy cabinet</a></li>
+        <li><a href="https://www.realmadrid.com/en/football/squad">Team</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/2017%E2%80%9318_Real_Madrid_C.F._season">Campaign</a></li>
+        <li><a href="https://www.realmadrid.com/en/about-real-madrid/honours/football">Trophy cabinet</a></li>
+
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>My Account
+          <strong class="caret"></strong></a>
+          <ul class="dropdown-menu">
+          <li>
+            <a href="#"><span class="glyphicon glyphicon-wrench"></span>Settings</a>
+          </li>
+          <li>
+            <a href="#"><span class="glyphicon glyphicon-refresh"></span>Update Profile</a>
+          </li>
+          <li>
+          <a href="http://shop.realmadrid.com/stores/realmadrid/US"><span class="glyphicon glyphicon-gift"></span>Merchandise</a>
+          </li>
+          <li>
+            <a href="#"><span class="glyphicon glyphicon-briefcase"></span>Billing</a>
+          </li>
+          <li class="divider">
+          </li>
+          <li>
+            <a href="#"><span class="glyphicon glyphicon-off"></span>Sign out</a>
+          </li>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
-
+<!--Header-->
 <div class="jumbotron">
   <div class="container text-center">
     <div class="container">
-  <h1>Real Madrid</h1>  
+  <h1>Real Madrid</h1> 
+<!--Carousel--> 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -75,20 +101,32 @@
 </div>
   </div>
 </div>
-  
+  <!--Container-->
 <div class="container-fluid bg-3 text-center">    
   <h2>HeadLines</h2><br>
   <div class="row">
-    <div class="col-lg-12 jumbotron text-center">
+    <div class="col-lg-6 jumbotron text-center">
       <p>Real Madrid made a good start to defending their European crown by beating Paris Saint-Germain 3-1 at the Bernabeu in the first leg of the last 16.
 
         The Ligue 1 champions now face the prospect of attempting to overturn that daunting advantage without one of their key men as Neymar suffered a cracked metatarsal against Marseille.</p>
+        <!--video-->
         <iframe width="100%" height="315" src="https://www.youtube.com/embed/bBQ4tIxhSkg">
+        </iframe>
+    </div>
+    <div class="col-lg-6 jumbotron text-center">
+    <p>Gerard Moreno scored an injury-time winner as Espanyol beat Real Madrid for the first time in over a decade.
+
+Real had won five games in a row but rested Cristiano Ronaldo and were made to pay for a below-par performance.
+Real defender Sergio Ramos was playing as an extra striker at the end as Moreno controlled Sergio Garcia's cross before smashing the ball home.
+
+</p>
+        <!--video-->
+         <iframe width="100%" height="315" src="https://www.youtube.com/embed/dB32w-RM88c">
         </iframe>
     </div>
   </div>
 </div><br>
-
+<!--3 coloumn grid-->
 <div class="container-fluid bg-3 text-center">    
   <div class="row">
     <div class="col-sm-3">
@@ -115,15 +153,47 @@
     </div>
   </div>
 </div><br><br>
-<footer class="container-fluid text-center footer">
-  <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav row">
-        <li class="col-sm-4"><img src="images/adidas.jpg" class="img-responsive" style="width:40%" ></li>
-        <li class="col-sm-4"><img src="images/emirates.png" class="img-responsive" style="width:55%" ></li>
-        <li class="col-sm-4"><img src="images/microsoft.png" class="img-responsive" style="width:90px"></li>
-      </ul>
-          </div>
-</footer>
+<footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+          <h6>Copyright &copy; 2013 {name}</h6>
+          </div><!-- end col-sm-2 -->
+          
+          <div class="col-sm-4">
+            <img src="images/adidas.jpg" class="img-responsive" style="width:2%% max-width:2%" alt="Image">
+          </div><!-- end col-sm-4 -->
+          
+          <div class="col-sm-2">
+            <h6>Navigation</h6>
+            <ul class="unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Links</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div><!-- end col-sm-2 -->
+          
+          <div class="col-sm-2">
+            <h6>Follow Us</h6>
+            <ul class="unstyled">
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Google Plus</a></li>
+            </ul>
+          </div><!-- end col-sm-2 -->
+          
+          <div class="col-sm-2">
+            <h6>Coded For Real Madrid <span class="glyphicon glyphicon-heart"></span></h6>
+          </div><!-- end col-sm-2 -->
+        </div><!-- end row -->
+      </div><!-- end container -->
+    </footer>
+<!--<footer class="container-fluid text-center footer">
+<ul class="nav" style="display:inline-block;">
+<img src="images/adidas.jpg" class="img-responsive" style="width:2%% max-width:2%" alt="Image">
+</ul>
+</footer>-->
 
 </body>
 </html>
